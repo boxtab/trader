@@ -1,0 +1,106 @@
+{
+  "servers": [
+    {
+      "name": "dev",
+      "baseUrl": "https://dev.wolf-trade.cc",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "preprod",
+      "baseUrl": "https://web.wolf-trade.net",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod02",
+      "baseUrl": "https://web.sanoncapital.cfd",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod03",
+      "baseUrl": "https://web.my-account.cc",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod06",
+      "baseUrl": "https://web.innovatexcapital.trade",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod12",
+      "baseUrl": "https://web.dws-markets.live",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod14",
+      "baseUrl": "https://web.block-bridge.trade",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod16",
+      "baseUrl": "https://web.b-group.click",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod18",
+      "baseUrl": "https://web.bonmotinvest.live",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod19",
+      "baseUrl": "https://web.vfr-invest.live",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod21",
+      "baseUrl": "https://web.tyrion.trade",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod23",
+      "baseUrl": "https://web-platforn.cfd",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod24",
+      "baseUrl": "https://web.moonfair.online",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod25",
+      "baseUrl": "https://web.nygaard.trade",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod28",
+      "baseUrl": "https://web.capitalgeneration.trade",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod29",
+      "baseUrl": "https://web.cp-company.pro",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    },
+    {
+      "name": "prod30",
+      "baseUrl": "https://web.vestrecapital.trade",
+      "traderLogin": "109478490",
+      "managerLogin": "User1@user.com"
+    }
+  ]
+}

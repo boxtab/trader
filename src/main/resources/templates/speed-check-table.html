@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* убрали фон */
+            color: #000; /* весь текст чёрный */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            padding: 6px 10px;
+            font-weight: 600;
+            text-align: left;
+            border-bottom: 1px solid #000; /* чёрная линия */
+            color: #000;
+            white-space: nowrap;
+        }
+        td {
+            padding: 6px 10px;
+            border-bottom: 1px solid #000; /* чёрная линия */
+            vertical-align: middle;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .endpoint-cell {
+            font-weight: 500;
+            text-align: right; /* выравнивание по правому краю */
+            border-right: 1px solid #000;
+            white-space: nowrap;
+        }
+        .time {
+            font-size: 13px; /* чуть крупнее */
+            font-weight: 600;
+            color: #000;
+        }
+        .status {
+            font-size: 11px; /* чуть меньше */
+            font-weight: 500;
+        }
+        .success {
+            color: #2e7d32; /* зелёный */
+        }
+        .error {
+            color: #d32f2f; /* красный */
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <!-- Заголовок таблицы -->
+        <th>Конечная точка</th>
+        <!-- Заголовки окружений (DEV, PREPROD, PROD...) -->
+        <th th:each="result : ${results}" th:text="${result.serverName}"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Перебираем все конечные точки -->
+    <tr th:each="endpoint : ${endpoints}">
+        <!-- Левая колонка: путь эндпоинта -->
+        <td class="endpoint-cell" th:text="${endpoint}"></td>
+
+        <!-- Для каждого окружения ищем результат по этому эндпоинту -->
+        <td th:each="result : ${results}">
+            <!-- Ищем подходящий check -->
+            <span th:each="check : ${result.endpointChecks}">
+                <span th:if="${check.endpointPath == endpoint}">
+                    <!-- Время ответа -->
+                    <span class="time" th:text="${check.responseTimeMs} + ' мс'"></span>
+                    <!-- HTTP статус -->
+                    <span class="status"
+                          th:text="' (' + 200 + ')'"
+                          th:classappend="success"></span>
+                </span>
+            </span>
+
+            <!-- Проверяем, был ли найден check -->
+            <span th:if="${not #lists.contains(result.endpointChecks.![endpointPath], endpoint)}" class="error">
+                Ошибка
+            </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

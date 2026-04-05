@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "vault.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable file-based vault implementation"
+    },
+    {
+      "name": "vault.file.path",
+      "type": "java.lang.String",
+      "description": "Path to encrypted secrets file"
+    },
+    {
+      "name": "vault.file.key-path",
+      "type": "java.lang.String",
+      "description": "Path to encryption key file"
+    },
+    {
+      "name": "vault.file.algorithm",
+      "type": "java.lang.String",
+      "description": "Encryption algorithm (e.g. AES/CBC/PKCS5Padding)",
+      "defaultValue": "AES/CBC/PKCS5Padding"
+    }
+  ]
+}

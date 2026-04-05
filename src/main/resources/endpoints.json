@@ -1,0 +1,319 @@
+{
+  "endpoints": [
+    {
+      "path": "/api/v1/login",
+      "authType": "TRADER",
+      "method": "POST",
+      "body": "{\n    \"login\": \"109478490\",\n    \"password\": \"12345zZ!ABC\"\n}"
+    },
+    {
+      "path": "/api/v1/manager/login",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"login\": \"User1@user.com\",\n    \"password\": \"XLYzaQxx6SGwF68aS44K\"\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/position/list",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/account/currencies",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/account/get-user-data",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/account/list",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/account/1",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/currencies",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/currencies/1",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/exchange-rate",
+      "authType": "TRADER",
+      "method": "POST",
+      "body": "{\"symbol_base\": \"USD\",\n\"symbol_quote\": \"EUR\"}"
+    },
+    {
+      "path": "/api/v1/exchange-rate/list",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/account/list",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n  \"login\": \"\",\n  \"filter_user\": \"\",\n  \"status\": \"\",\n  \"group\": \"\",\n  \"date_from\": \"\",\n  \"date_to\": \"\",\n  \"sort\": {\n    \"column\": \"leverage\",\n    \"method\": \"asc\"\n  },\n  \"per_page\": 1\n}"
+    },
+    {
+      "path": "/api/v1/manager/account/simple-list",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/account/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/asset-group/commission",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/asset-group/leverage",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/balance/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/calculation/commission",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"commission_percentage\": 0,\n    \"open_price\": 1050.74,\n    \"lots\": 10,\n    \"units\": 1,\n    \"open_rate\": 1\n}"
+    },
+    {
+      "path": "/api/v1/manager/calculation/profit-loss",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"order_type\": 1,\n    \"open_price\": 3.29100000,\n    \"close_price\": 1.38800000,\n    \"open_rate\": 1,\n    \"lots\": 10,\n    \"units\":0.01,\n    \"commission\": 0\n}"
+    },
+    {
+      "path": "/api/v1/manager/check/balance",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/contract",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/exchange-rate",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\"symbol_base\": \"USD\", \"symbol_quote\": \"EUR\"}"
+    },
+    {
+      "path": "/api/v1/manager/exchange-rate/list",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/group/list",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"search\": \"U\",\n    \"sort\": {\n        \"column\": \"id\",\n        \"method\": \"asc\"\n        },\n    \"per_page\": 20\n}"
+    },
+    {
+      "path": "/api/v1/manager/group/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/group/1/accounts",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/group/1/users",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/markets",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/order/buy-sell/1",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\"quote_id\": 6, \"order_type\": 0, \"order_state\": 1, \"currency_id\": 1, \"open_price\": 2.232, \"units\": 1}"
+    },
+    {
+      "path": "/api/v1/manager/order/calculation/stop-loss",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"stopLossKey\": 2,\n    \"isBuy\": 1,\n    \"closePrice\": 1.22,\n    \"stopLossValue\": 1.211,\n    \"volume\": 5,\n    \"lots\": 10,\n    \"commission\": 0.5,\n    \"ask\": 1.301,\n    \"bid\": 1.201,\n    \"stopLoss\": 1.540,\n    \"openingPrice\": 1.250,\n    \"isOrders\": 1,\n    \"isPending\": 0,\n    \"activationPrice\": 1.200\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/close-all/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/order/close-loss/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/order/close-profit/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/order/deleted/list",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"account_id\": 1,\n    \"sort\": {\n        \"column\": \"volume\",\n        \"method\": \"desc\"\n        },\n    \"page\": 1,\n    \"per_page\": 500\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/deviation-change-pl",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"orderID\": 64,\n    \"units\": 10,\n    \"close_price\": 5.279,\n    \"open_price\": 8.281,\n    \"opening_date_time\": \"2024-03-31 12:13:14\",\n    \"closing_date_time\": \"2024-03-31 20:11:23\",\n    \"sl\": null,\n    \"tp\": null\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/deviation-rollback",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"orderID\": 76\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/deviation-smart-pl/1",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"order_type\": 0,\n    \"quote_id\": 6,\n    \"units\": 2,\n    \"open_price\": 17.2,\n    \"open_rate\": 1,\n    \"close_price\": 18.3,\n    \"profit_loss\": 500,\n    \"open_datetime\": \"2025-03-24 13:42:15\",\n    \"close_datetime\": \"2025-03-24 14:51:17\"\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/history/deviation-duplication",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"accountID\": 3,\n    \"orderIDs\": [1]\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/history/distribute-to-accounts",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"orderIDs\": [72, 73, 74],\n    \"accountIDs\": [45, 51]\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/history/export/1",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"table_fields\": [\n        \"order_id\",\n        \"symbol\",\n        \"opening_date\",\n        \"closing_date\",\n        \"type\",\n        \"units\",\n        \"lots\",\n        \"opening_price\",\n        \"closing_price\",\n        \"stop_loss_value\",\n        \"take_profit_value\",\n        \"commission\",\n        \"pl\"\n    ]\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/history/list",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"filter_account_id\": \"1\",\n    \"filter_type\": \"buy\",\n    \"sort\": {\n        \"column\": \"volume\",\n        \"method\": \"desc\"\n        },\n    \"per_page\": 5\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/list",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"account_login\": \"109\",\n    \"order_id\": null,\n    \"order_type\": null,\n    \"order_opening_date_from\": null,\n    \"order_opening_date_to\": null,\n    \"order_closing_date_from\": null,\n    \"order_closing_date_to\": null,\n    \"sort\": {\n        \"column\": null,\n        \"method\": null\n        },\n    \"page\": null,\n    \"per_page\": 100\n}"
+    },
+    {
+      "path": "/api/v1/manager/order/pending/list/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/order/records",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{}"
+    },
+    {
+      "path": "/api/v1/manager/users/current",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/users/list",
+      "authType": "MANAGER",
+      "method": "POST",
+      "body": "{\n    \"search\": \"\",\n    \"sort\": {\n        \"column\": \"id\",\n        \"method\": \"asc\"\n        },\n    \"per_page\": 10\n}"
+    },
+    {
+      "path": "/api/v1/manager/users/simple-list",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/manager/users/1",
+      "authType": "MANAGER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/markets",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/order/buy-sell",
+      "authType": "TRADER",
+      "method": "POST",
+      "body": "{\"quote_id\": 6, \"order_type\": 0, \"order_state\": 1, \"currency_id\": 1, \"open_price\": 2.232, \"units\": 1}"
+    },
+    {
+      "path": "/api/v1/order/calculation/stop-loss",
+      "authType": "TRADER",
+      "method": "POST",
+      "body": "{\"stopLossKey\": \"2\", \"isBuy\": true, \"closePrice\": 1.22, \"stopLossValue\": 50000, \"volume\": 1, \"lots\": 0.01, \"commission\": 0, \"ask\": 0, \"bid\": 0, \"openingPrice\": 70000, \"isOrders\": true, \"isPending\": false, \"activationPrice\": 5338, \"stopLoss\": 200}"
+    },
+    {
+      "path": "/api/v1/order/calculation/take-profit",
+      "authType": "TRADER",
+      "method": "POST",
+      "body": "{\"takeProfitKey\": \"2\", \"isBuy\": true, \"closePrice\": 0, \"takeProfitValue\": 0, \"volume\": 1, \"lots\": 0.01, \"commission\": 0, \"ask\": 0, \"bid\": 0, \"isOrders\": true, \"takeProfit\": 303.116, \"openingPrice\": 69688.3, \"isPending\": false, \"activationPrice\": 0}"
+    },
+    {
+      "path": "/api/v1/order/close-all",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/order/close-loss",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/order/close-profit",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/order/history/list",
+      "authType": "TRADER",
+      "method": "POST",
+      "body": "{\"filter\": \"all\"}"
+    },
+    {
+      "path": "/api/v1/order/pending/list",
+      "authType": "TRADER",
+      "method": "GET"
+    },
+    {
+      "path": "/api/v1/order/position/list",
+      "authType": "TRADER",
+      "method": "GET"
+    }
+  ]
+}
